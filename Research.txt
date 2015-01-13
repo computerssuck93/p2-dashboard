@@ -1,0 +1,23 @@
+## What are their problems?
+
+1. too many logins
+2. Shitty User Experience
+3. poor visual design
+
+## Define hierarchy of needs/wants?
+
+1. No Search Bar 
+2. Canvas (Embedded), ability to add personal relevant links to courses you're enrolled in.
+3. Account (Embedded)
+
+## What features solve these problems?
+
+* Registration - simplicity, no dropdowns or safe/better dropdowns (buffer zone)
+* canvas - mail is terrible
+* Account - True SSO, Book orders
+
+
+Colors
+
+Simple Black and White
+Font Helvetica
