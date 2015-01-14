@@ -24,7 +24,18 @@ section {
 	width: 50px;
 }
 
+/* Style Tile For */
+.color-1{
+	background: orange;
+}
 
+.color-2{
+	background: green;
+}
+
+.color-3{
+	background: red;
+}
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
