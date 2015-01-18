@@ -20,7 +20,9 @@ body {
   background: linear-gradient(135deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
               linear-gradient(135deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
 
-  max-width: 1000px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 79.15%;
   margin: 0 auto 3em auto;
 }
 
@@ -188,6 +190,12 @@ section.patterns{
   background: linear-gradient(135deg, #e8e8e8 0%, #ffffff 75%, #ffffff 75%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e8e8e8), color-stop(75%,#ffffff), color-stop(75%,#ffffff));
 }
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .clearfix { zoom: 1;}
+*:first-child+html .clearfix{ zoom: 1; }
+
 
 /* Show Grid */
 /*.showgrid {
