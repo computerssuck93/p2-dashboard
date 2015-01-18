@@ -1,42 +1,195 @@
 /* Set Your Own Margin & Padding */
-h2, h3, p {
-	margin: 0;
+
+body {
+  /*background: url("../img/pyramid.png");
+  background: url("../img/vaio.png");
+  background-repeat: repeat;*/
+
+  background: -moz-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%, rgba(255,255,255,1) 65%),
+              -moz-linear-gradient(-45deg, rgba(86,86,86,.5) 0%, rgba(255,255,255,1) 100%);
+
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(204,204,204,0.65)), color-stop(65%,rgba(255,255,255,1))),
+              -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(86,86,86,.5)), color-stop(100%,rgba(255,255,255,1)));
+
+  background: -o-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              -o-linear-gradient(-45deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
+
+  background: -ms-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              -ms-linear-gradient(-45deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
+
+  background: linear-gradient(135deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              linear-gradient(135deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
+
+  max-width: 1000px;
+  margin: 0 auto 3em auto;
+}
+
+section {
+  margin: 20px 0;
+}
+
+header h1 {
+  font-size: 3em;
+  letter-spacing: .05em;
+  text-align: center;
+}
+
+header p {
+  font-family: 'IskoolaPota' serif;
+  font-size: 1.15em;
+  text-align: left;
+}
+
+header span.created {
+  margin: 0 0 0 0;
+  float: right;
+}
+
+h1,h2 {
+  font-family: 'IskoolaPota-Black' serif;
+  letter-spacing: .025em;
+}
+
+h3 {
+  font-family: 'IskoolaPota' serif;
+  font-weight: normal;
+  letter-spacing: .025em;
+}
+
+section aside{
+  margin: -.75em 0 1em 0;
+  font-family: 'Helvetica' sans-serif;
+}
+
+section.main{
+  width: 50%;
+  float: left;
+}
+
+section.bodyText{
+  width: 40%;
+  float: right;
+  padding-left: 10%;
+}
+
+section.bodyText h3{
+  margin-top: 1.5em;
+  margin-bottom: -0.25em;
+
+}
+
+#unvisited a {
+  color: #000;
+  text-shadow: 1px 1px rgb(255, 255, 0);
+}
+
+#visited a {
+  color: #aaa;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#normal{
+  font-family: 'Helvetica' sans-serif;
+  font-size: 1.015em;
+  margin: -.75em 0 1.25em 0;
+  width: 95%;
+}
+
+#bold,
+#italic,
+#boldItalic{
+  font-size: 1.05em;
+}
+
+#bold{
+  font-family: 'Helvetica-Bold' sans-serif;
+  font-weight: bold;
+  margin-top: 1.75em;
+}
+
+#italic{
+  font-family: 'Helvetica-Oblique' sans-serif;
+  font-weight: normal;
+  font-style: oblique;
+  margin-top: 1.5em;
+}
+
+#boldItalic{
+  font-family: 'Helvetica-BoldOblique' sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+  margin-top: 1.5em;
 }
 
 /* Layout for Style Tile*/
-section {
-	margin: 20px 0;
+section.colors,
+section.patterns {
+  display: inline;
+  float: left;
+}
+
+section.colors{
+  width: 50%;
+  clear: left;
+}
+
+section.patterns{
+  width: 45%;
+  padding-left: 5%;
 }
 
 .color-1,
 .color-2,
 .color-3,
-.pattern-1,
+.color-4,
+.pattern-1/*,
 .pattern-2,
 .pattern-3, 
 .imagery-1,
 .imagery-2,
-.imagery-3 {
-	border: 1px solid #000;
-	float: left;
-	margin: 0 10px;
-	height: 50px;
-	width: 50px;
+.imagery-3 */{
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  float: left;
+  margin: 0 10px 0 10px;
+  height: 75px;
+  width: 75px;
+}
+
+
+.colors aside,
+.patterns aside {
+  font-family: 'IskoolaPota';
+  font-size: 1.5em;
+  margin-bottom: .5em;
 }
 
 /* Style Tile For */
-.color-1{
-	background: orange;
+
+.color-1 {
+  background: #000;
 }
 
-.color-2{
-	background: green;
+.color-2 {
+  background: #fff;
 }
 
-.color-3{
-	background: red;
+.color-3 {
+  background: #aaa;
 }
+
+.color-4 {
+  background: #ffff00;
+}
+
+.pattern-1 {
+  background: linear-gradient(135deg, #e8e8e8 0%, #ffffff 75%, #ffffff 75%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e8e8e8), color-stop(75%,#ffffff), color-stop(75%,#ffffff));
+}
+
 /* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
-}
+/*.showgrid {
+  background: url("../img/grid-bg.png") repeat-y;
+}*/
