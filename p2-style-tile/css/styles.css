@@ -1,9 +1,11 @@
-/* Set Your Own Margin & Padding */
+/**************************
+GENERAL
+**************************/
 
-body {
+body{
   /*background: url("../img/pyramid.png");
   background: url("../img/vaio.png");
-  background-repeat: repeat;*/
+  background-repeat: repeat; */
 
   background: -moz-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%, rgba(255,255,255,1) 65%),
               -moz-linear-gradient(-45deg, rgba(86,86,86,.5) 0%, rgba(255,255,255,1) 100%);
@@ -26,36 +28,51 @@ body {
   margin: 0 auto 3em auto;
 }
 
-section {
+section{
   margin: 20px 0;
 }
 
-header h1 {
+/**************************
+HEADER
+**************************/
+
+header h1{
   font-size: 3em;
   letter-spacing: .05em;
   text-align: center;
 }
 
-header p {
+header p{
   font-family: 'IskoolaPota' serif;
   font-size: 1.15em;
   text-align: left;
 }
 
-header span.created {
+header span.created{
   margin: 0 0 0 0;
   float: right;
 }
 
-h1,h2 {
-  font-family: 'IskoolaPota-Black' serif;
+/**************************
+HEADINGS & PARAGRAPH
+**************************/
+
+section.main{
+  width: 50%;
+  float: left;
+}
+
+h1, h2, h3{
   letter-spacing: .025em;
 }
 
-h3 {
+h1, h2{
+  font-family: 'IskoolaPota-Black' serif;
+}
+
+h3{
   font-family: 'IskoolaPota' serif;
   font-weight: normal;
-  letter-spacing: .025em;
 }
 
 section aside{
@@ -63,10 +80,16 @@ section aside{
   font-family: 'Helvetica' sans-serif;
 }
 
-section.main{
-  width: 50%;
-  float: left;
+#normal{
+  font-family: 'Helvetica' sans-serif;
+  font-size: 1.015em;
+  margin: -.75em 0 1.25em 0;
+  width: 95%;
 }
+
+/**************************
+PARAGRAPH & LINK STYLES
+**************************/
 
 section.bodyText{
   width: 40%;
@@ -77,25 +100,17 @@ section.bodyText{
 section.bodyText h3{
   margin-top: 1.5em;
   margin-bottom: -0.25em;
-
 }
 
-#unvisited a {
+#unvisited a{
   color: #000;
   text-shadow: 1px 1px rgb(255, 255, 0);
 }
 
-#visited a {
+#visited a{
   color: #aaa;
   text-shadow: 1px 1px rgb(0, 0, 0);
   text-decoration: none;
-}
-
-#normal{
-  font-family: 'Helvetica' sans-serif;
-  font-size: 1.015em;
-  margin: -.75em 0 1.25em 0;
-  width: 95%;
 }
 
 #bold,
@@ -124,9 +139,12 @@ section.bodyText h3{
   margin-top: 1.5em;
 }
 
-/* Layout for Style Tile*/
+/**************************
+ LAYOUT FOR STYLE TILES
+**************************/
+
 section.colors,
-section.patterns {
+section.patterns{
   display: inline;
   float: left;
 }
@@ -160,44 +178,73 @@ section.patterns{
   width: 75px;
 }
 
-
 .colors aside,
-.patterns aside {
+.patterns aside{
   font-family: 'IskoolaPota';
   font-size: 1.5em;
   margin-bottom: .5em;
 }
 
-/* Style Tile For */
+/**************************
+ STYLE TILE PROPERTIES
+**************************/
 
-.color-1 {
+.color-1{
   background: #000;
 }
 
-.color-2 {
+.color-2{
   background: #fff;
 }
 
-.color-3 {
+.color-3{
   background: #aaa;
 }
 
-.color-4 {
+.color-4{
   background: #ffff00;
 }
 
-.pattern-1 {
-  background: linear-gradient(135deg, #e8e8e8 0%, #ffffff 75%, #ffffff 75%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e8e8e8), color-stop(75%,#ffffff), color-stop(75%,#ffffff));
+.pattern-1{
+  background: -moz-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%, rgba(255,255,255,1) 65%),
+              -moz-linear-gradient(-45deg, rgba(86,86,86,.5) 0%, rgba(255,255,255,1) 100%);
+
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(204,204,204,0.65)), color-stop(65%,rgba(255,255,255,1))),
+              -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(86,86,86,.5)), color-stop(100%,rgba(255,255,255,1)));
+
+  background: -o-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              -o-linear-gradient(-45deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
+
+  background: -ms-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              -ms-linear-gradient(-45deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
+
+  background: linear-gradient(135deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              linear-gradient(135deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
 }
 
-.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
-.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
-* html .clearfix { zoom: 1;}
-*:first-child+html .clearfix{ zoom: 1; }
+.clear{
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0
+}
 
+.clearfix:after{
+  clear:both; content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
-/* Show Grid */
-/*.showgrid {
-  background: url("../img/grid-bg.png") repeat-y;
-}*/
+* html .clearfix{ 
+  zoom: 1;
+}
+
+*:first-child+html .clearfix{ 
+  zoom: 1;
+}
