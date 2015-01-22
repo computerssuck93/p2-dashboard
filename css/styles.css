@@ -1,11 +1,64 @@
-/* Profile */
+/**************************
+PROFILE
+**************************/
 
-.profile{
-	background: orange;
+.profile {
+  background: orange;
 }
 
-/* Balance */
-.balance h1{
-	color: orange;
-	font-size: 2em;
+/**************************
+BALANCE
+**************************/
+
+.balance h1 {
+  color: orange;
+  font-size: 2em;
 }
+
+/**************************
+SEARCH BAR
+**************************/
+
+.ui.search .prompt {
+  border-radius: 10px;
+}
+
+.ui.icon.input{
+  width: 50%;
+  right: 25%;
+  left: 25%;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.36);
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix::after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+* html .clearfix {
+  zoom: 1;
+}
+
+*:first-child+html .clearfix {
+  zoom: 1;
+}
+

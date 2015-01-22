@@ -228,10 +228,10 @@ section.patterns{
   overflow: hidden;
   visibility: hidden;
   width: 0;
-  height: 0
+  height: 0;
 }
 
-.clearfix:after{
+.clearfix::after{
   clear:both; content: ' ';
   display: block;
   font-size: 0;
