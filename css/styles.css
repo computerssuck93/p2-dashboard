@@ -26,7 +26,9 @@ SEARCH BAR
 .ui.icon.input{
   width: 50%;
   right: 25%;
-  left: 25%;
+  /*left: 25%;*/
+  /* 0% need to display properly on bullshit cunt Dash */
+  left: 0%; 
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.36);
   border-width: 1px;
