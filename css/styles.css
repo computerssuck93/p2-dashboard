@@ -3,8 +3,59 @@ PROFILE
 **************************/
 
 .profile {
-  background: orange;
+  background: -moz-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%, rgba(255,255,255,1) 65%),
+              -moz-linear-gradient(-45deg, rgba(86,86,86,.5) 0%, rgba(255,255,255,1) 100%);
+
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(204,204,204,0.65)), color-stop(65%,rgba(255,255,255,1))),
+              -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(86,86,86,.5)), color-stop(100%,rgba(255,255,255,1)));
+
+  background: -o-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              -o-linear-gradient(-45deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
+
+  background: -ms-linear-gradient(-45deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              -ms-linear-gradient(-45deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
+
+  background: linear-gradient(135deg, rgba(204,204,204,0.65) 0%,rgba(255,255,255,1) 65%),
+              linear-gradient(135deg, rgba(86,86,86,.5) 0%,rgba(255,255,255,1) 100%);
 }
+
+.profile div.ui.card div.content a.header{
+  font-family: 'IskoolaPota-Black' serif;
+  font-size: 1.25em;
+}
+
+.profile div.ui.card div.content div.meta span.date{
+  font-family: 'Helvetica-Oblique' sans-serif;
+  font-weight: normal;
+  font-style: oblique;
+  font-size: .95em;
+  color: #aaa;
+}
+
+.profile div.ui.card div.content div.description{
+  font-family: 'Helvetica';
+  font-weight: normal;
+  font-style: normal;
+  color: #000;
+  font-size: 1.015em;
+  letter-spacing: .015em;
+}
+
+.ui.card > .extra a:not(.ui){
+  font-family: 'Helvetica';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.015em;
+  letter-spacing: .015em;
+  color: #aaa;
+}
+
+.ui.card > .extra a:not(.ui):hover {
+  color: #FFF200;
+  color: #000;
+  text-shadow: 1px 1px rgb(255, 255, 0);
+}
+
 
 /**************************
 BALANCE
@@ -14,6 +65,8 @@ BALANCE
   color: orange;
   font-size: 2em;
 }
+
+
 
 /**************************
 SEARCH BAR
