@@ -24,7 +24,9 @@ SEARCH BAR
 }
 
 .ui.icon.input{
-  width: 50%;
+  /*width: 50%;*/
+  /* JESUS FUCKING CHRIST, FUCK THE DASH PIECE OF BULLSHIT */
+  width: 100%;
   right: 25%;
   /*left: 25%;*/
   /* 0% need to display properly on bullshit cunt Dash */
