@@ -18,6 +18,16 @@
   max-width: 79.15%;
 }
 
+#events{
+  position: absolute;
+  font-size: 5em;
+  font-family: 'IskoolaPota-Black' serif;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
 /**************************
 PROFILE
 **************************/
